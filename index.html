@@ -1,0 +1,324 @@
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+    <link rel="icon" href="src/icon.png" type="image/png" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        p {
+            font-size: 18px;
+        }
+
+        h1 {
+            font-size: 22px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .btn_install {
+            background-color: #059e9a;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 20px;
+            padding: 8px 40px;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .build_store {
+            max-width: 95%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .store {
+            position: relative;
+            text-align: left;
+            color: white;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 300px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+            display: none;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            background-color: rgba(5, 158, 154, 0.8);
+            font-weight: bold;
+            font-size: 16px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(5, 158, 154, 0.8);
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #059e9a;
+        }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+    </style>
+</head>
+
+<body style="max-width:900px; margin-left:auto ;margin-right:auto">
+
+    <h1>
+        MangaKakalot - Manga Reader
+        <br>
+        (Manga Rock Alternative)
+    </h1>
+    <br>
+    <center>
+        <a class="btn_install" href="https://apps.apple.com/app/id">App Store</a> <br>
+        (Version 1.0.0)
+    </center>
+    <br>
+    <!--
+    <center>
+                <a class="btn_install" href="https://testflight.apple.com/join/NbWW7mAl">TestFlight</a><br>
+                (Version 1.2.1)
+            </center>
+    -->
+
+
+
+    <!--
+    <center>
+    <a class="btn_install" href="itms-services://?action=download-manifest&amp;url=https://dl.dropboxusercontent.com/s/j82oh2anhl8elx8/manifest.plist">UDID Devices</a>
+    </center>
+    -->
+    <!--
+    <br>
+    <div class="store">
+    <a href="https://builds.io/apps/kakamanga/?aid=1025568">
+    <img class="build_store" src="https://raw.githubusercontent.com/kakamanga/app/master/src/build_store.jpg">
+    </a>
+    </div>
+    -->
+
+
+    <h2>Join - Telegram Support&nbsp;<a href="https://t.me/joinchat/Nk2fxy9kn40xN2U1" target="_blank " rel="noopener" style="color: #059e9a;">MangaKakalot</a></h2>
+
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <img src="/src/screenshot_01.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="/src/screenshot_02.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="/src/screenshot_03.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="/src/screenshot_04.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="/src/screenshot_05.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="/src/screenshot_06.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="/src/screenshot_07.png" style="width:100%">
+        </div>
+
+
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+    </div>
+
+    <ul>
+        <p>
+            
+            - There are many manga and comics applications on the App Store now, so you can choose any app to use. But how long will you keep it??? 
+            <br>
+            - Understand almost inconvenence user cases, MangaKakalot is released to bring the interesting entertainment time.
+            <br><br>
+            Why that???
+            <br>
+            - Yes, with the unlimited content is showing on the simple and professional interface, it will make all users get the absolute satisfied.
+            <br><br>
+            As you can see:
+            <br>
+            - It's very easy to approach the Popular Manga at the top of screen. They are valuable over time.
+            <br>
+            - 4 regular status are: Newest, Top view, Completed, Ongoing. They will bring a great experience like never before with rich and diverse content of each genre.
+            <br>
+            - If you are a fan of comic books, we are ready to meet the latest manga chapters that are released regularly every minute, every hour.
+            <br>
+            - There is nothing more convenient than sharing, if you just open the application, you are suggested to continue reading the previous chapters of the story that you are following.
+            <br>
+            - Variety of genres we have: Action, Comedy, Drama, Manhua, Mature, Romance, Tragedy, Webtoons,... Each genre is selected with a series of comics books with the same aspect, ready to serve absolutely every user's taste.
+            <br>
+            - It's quick to read a comic with the search feature to save time, just 1 keyword, no need to be exact, the application will display all relevant results for you to choose from.
+            <br>
+            - Make any manga to favorites, then read it later. Every time a new chapter is released, it is marked with a prominent color to attach the attention of users, helping not to miss the interesting content that is following.
+            <br>
+            - MangaKakalot supports users from all over the world, each user in a country has a different habit of reading story mode. No problem, the app has 4 modes available for your: Left to Right, Right to Left, Vertical, Webtoons. You can completely set the default mode, but for stories of the webtoons genre, this smart application will automatically turn on the webtoons mode to help you access the best and easiest content.
+            <br>
+            - This is a free manga reader application, so there are ads. To avoid annoying, you can remove it by paying a very small fee, and enjoy the ad-free app forever.
+            <br><br>
+            Wish you have a great experience with this application. Please share with all relatives and friends, this will bring a lot of positive energy to the development team.
+            <br><br>
+            Please rate and give your feedback about this app for the better improvement app's features.
+            <br><br>
+            Finaly, we sincerely thank you!
+            <br><br>
+        </p>
+    </ul>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+</body></html>
