@@ -117,13 +117,14 @@
             height: 15px;
             width: 15px;
             margin: 0 2px;
-            background-color: #bbb;
+            background-color: white;
             border-radius: 50%;
             display: inline-block;
             transition: background-color 0.6s ease;
         }
 
-        .active,
+
+        .dot-active,
         .dot:hover {
             background-color: #059e9a;
         }
@@ -155,20 +156,72 @@
                 opacity: 1
             }
         }
+
+        /* Header/Logo Title */
+        .header {
+            text-align: center;
+            color: white;
+            font-size: 30px;
+        }
+
+        .collapsible {
+            background-color: #031212;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 20px;
+        }
+
+        .active,
+        .collapsible:hover {
+            background-color: #031212;
+        }
+
+        .collapsible:after {
+            content: '\25BC';
+            color: white;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\25B2";
+        }
+
+        .content {
+            /*            padding: 0 ;*/
+            padding-left: 0px;
+            padding-right: 25px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
     </style>
 </head>
 
-<body style="max-width:900px; margin-left:auto ;margin-right:auto">
+<body style="max-width:900px; margin-left:auto ;margin-right:auto; background-color: #031212">
 
-    <h1>
-        MangaKakalot - Manga Reader
-        <br>
-        (Manga Rock Alternative)
-    </h1>
+    <div class="header">
+        <img src="src/header.png" style="width:100%; height:100%">
+        <h1>
+            MangaKakalot - Manga Reader
+            <br>
+            (Manga Rock Alternative)
+            <br>
+            Version 1.0.0
+        </h1>
+    </div>
+
     <br>
     <center>
-        <a class="btn_install" href="https://apps.apple.com/app/id">App Store</a> <br>
-        (Version 1.0.0)
+        <a href="https://apps.apple.com/app/id">
+            <img src="src/appstore.png" style="height: 45px">
+        </a>
     </center>
     <br>
     <!--
@@ -195,39 +248,36 @@
     -->
 
 
-    <h2>Join - Telegram Support&nbsp;<a href="https://t.me/joinchat/Nk2fxy9kn40xN2U1" target="_blank " rel="noopener" style="color: #059e9a;">MangaKakalot</a></h2>
-
-
     <!-- Slideshow container -->
     <div class="slideshow-container">
 
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
-            <img src="/src/screenshot_01.png" style="width:100%">
+            <img src="src/screenshot_01.png" style="width:100%">
         </div>
 
         <div class="mySlides fade">
-            <img src="/src/screenshot_02.png" style="width:100%">
+            <img src="src/screenshot_02.png" style="width:100%">
         </div>
 
         <div class="mySlides fade">
-            <img src="/src/screenshot_03.png" style="width:100%">
+            <img src="src/screenshot_03.png" style="width:100%">
         </div>
 
         <div class="mySlides fade">
-            <img src="/src/screenshot_04.png" style="width:100%">
+            <img src="src/screenshot_04.png" style="width:100%">
         </div>
 
         <div class="mySlides fade">
-            <img src="/src/screenshot_05.png" style="width:100%">
+            <img src="src/screenshot_05.png" style="width:100%">
         </div>
 
         <div class="mySlides fade">
-            <img src="/src/screenshot_06.png" style="width:100%">
+            <img src="src/screenshot_06.png" style="width:100%">
         </div>
 
         <div class="mySlides fade">
-            <img src="/src/screenshot_07.png" style="width:100%">
+            <img src="src/screenshot_07.png" style="width:100%">
         </div>
 
 
@@ -248,58 +298,72 @@
         <span class="dot" onclick="currentSlide(7)"></span>
     </div>
 
-    <ul>
-        <p>
-            
-            - There are many manga and comics applications on the App Store now, so you can choose any app to use. But how long will you keep it??? 
-            <br>
-            - Understand almost inconvenence user cases, MangaKakalot is released to bring the interesting entertainment time.
-            <br><br>
-            Why that???
-            <br>
-            - Yes, with the unlimited content is showing on the simple and professional interface, it will make all users get the absolute satisfied.
-            <br><br>
-            As you can see:
-            <br>
-            - It's very easy to approach the Popular Manga at the top of screen. They are valuable over time.
-            <br>
-            - 4 regular status are: Newest, Top view, Completed, Ongoing. They will bring a great experience like never before with rich and diverse content of each genre.
-            <br>
-            - If you are a fan of comic books, we are ready to meet the latest manga chapters that are released regularly every minute, every hour.
-            <br>
-            - There is nothing more convenient than sharing, if you just open the application, you are suggested to continue reading the previous chapters of the story that you are following.
-            <br>
-            - Variety of genres we have: Action, Comedy, Drama, Manhua, Mature, Romance, Tragedy, Webtoons,... Each genre is selected with a series of comics books with the same aspect, ready to serve absolutely every user's taste.
-            <br>
-            - It's quick to read a comic with the search feature to save time, just 1 keyword, no need to be exact, the application will display all relevant results for you to choose from.
-            <br>
-            - Make any manga to favorites, then read it later. Every time a new chapter is released, it is marked with a prominent color to attach the attention of users, helping not to miss the interesting content that is following.
-            <br>
-            - MangaKakalot supports users from all over the world, each user in a country has a different habit of reading story mode. No problem, the app has 4 modes available for your: Left to Right, Right to Left, Vertical, Webtoons. You can completely set the default mode, but for stories of the webtoons genre, this smart application will automatically turn on the webtoons mode to help you access the best and easiest content.
-            <br>
-            - This is a free manga reader application, so there are ads. To avoid annoying, you can remove it by paying a very small fee, and enjoy the ad-free app forever.
-            <br><br>
-            Wish you have a great experience with this application. Please share with all relatives and friends, this will bring a lot of positive energy to the development team.
-            <br><br>
-            Please rate and give your feedback about this app for the better improvement app's features.
-            <br><br>
-            Finaly, we sincerely thank you!
-            <br><br>
-        </p>
-    </ul>
+
+    <br>
+    <button class="collapsible">Description</button>
+    <div class="content">
+        <ul style="color: white">
+            <p>
+                - There are many manga and comics applications on the App Store now, so you can choose any app to use. But how long will you keep it???
+                <br>
+                - Understand almost inconvenence user cases, MangaKakalot is released to bring the interesting entertainment time.
+                <br><br>
+                Why that???
+                <br>
+                - Yes, with the unlimited content is showing on the simple and professional interface, it will make all users get the absolute satisfied.
+                <br><br>
+                As you can see:
+                <br>
+                - It's very easy to approach the Popular Manga at the top of screen. They are valuable over time.
+                <br>
+                - 4 regular status are: Newest, Top view, Completed, Ongoing. They will bring a great experience like never before with rich and diverse content of each genre.
+                <br>
+                - If you are a fan of comic books, we are ready to meet the latest manga chapters that are released regularly every minute, every hour.
+                <br>
+                - There is nothing more convenient than sharing, if you just open the application, you are suggested to continue reading the previous chapters of the story that you are following.
+                <br>
+                - Variety of genres we have: Action, Comedy, Drama, Manhua, Mature, Romance, Tragedy, Webtoons,... Each genre is selected with a series of comics books with the same aspect, ready to serve absolutely every user's taste.
+                <br>
+                - It's quick to read a comic with the search feature to save time, just 1 keyword, no need to be exact, the application will display all relevant results for you to choose from.
+                <br>
+                - Make any manga to favorites, then read it later. Every time a new chapter is released, it is marked with a prominent color to attach the attention of users, helping not to miss the interesting content that is following.
+                <br>
+                - MangaKakalot supports users from all over the world, each user in a country has a different habit of reading story mode. No problem, the app has 4 modes available for your: Left to Right, Right to Left, Vertical, Webtoons. You can completely set the default mode, but for stories of the webtoons genre, this smart application will automatically turn on the webtoons mode to help you access the best and easiest content.
+                <br>
+                - This is a free manga reader application, so there are ads. To avoid annoying, you can remove it by paying a very small fee, and enjoy the ad-free app forever.
+                <br><br>
+                Wish you have a great experience with this application. Please share with all relatives and friends, this will bring a lot of positive energy to the development team.
+                <br><br>
+                Please rate and give your feedback about this app for the better improvement app's features.
+                <br><br>
+                Finaly, we sincerely thank you!
+                <br><br>
+            </p>
+        </ul>
+    </div>
+
+    <br>
+    <center>
+        <a href="https://t.me/joinchat/Nk2fxy9kn40xN2U1">
+            <img src="src/telegram.png" style="height: 40px">
+        </a>
+    </center>
 
     <script>
+        
+        var timeout;
         var slideIndex = 1;
         showSlides(slideIndex);
 
         function plusSlides(n) {
+            clearTimeout(timeout);
             showSlides(slideIndex += n);
         }
 
         function currentSlide(n) {
+            clearTimeout(timeout);
             showSlides(slideIndex = n);
         }
-
         function showSlides(n) {
             var i;
             var slides = document.getElementsByClassName("mySlides");
@@ -314,11 +378,33 @@
                 slides[i].style.display = "none";
             }
             for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
+                dots[i].className = dots[i].className.replace(" dot-active", "");
             }
             slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
+            dots[slideIndex - 1].className += " dot-active";
+
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            timeout = setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
         }
     </script>
+    <br><br>
 
 </body></html>
